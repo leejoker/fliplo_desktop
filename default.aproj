@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="fliplo_desktop" libEmbed="true" icon="..." ui="win" output="fliplo_desktop.exe" CompanyName="单位名称" FileDescription="fliqlo_desktop" LegalCopyright="Copyright (C) 单位名称 2020" ProductName="fliqlo_desktop" InternalName="fliqlo_desktop" FileVersion="0.0.0.04" ProductVersion="0.0.0.04" publishDir="/dist/" dstrip="false">
+	<file name="main.aardio" path="main.aardio" comment="main.aardio"/>
+	<folder name="Js渲染进程" path="res" embed="true" local="false">
+		<file name="flipclock.css" path="res\flipclock.css" comment="res\flipclock.css"/>
+		<file name="flipclock.js" path="res\flipclock.js" comment="res\flipclock.js"/>
+		<file name="index.aardio" path="res\index.aardio" comment="res\index.aardio"/>
+		<file name="jquery.min.js" path="res\jquery.min.js" comment="res\jquery.min.js"/>
+		<file name="style.css" path="res\style.css" comment="res\style.css"/>
+	</folder>
+	<folder name="Js主进程" path="electron.app" comment="目录" embed="false" local="false">
+		<file name=".aardio-ignore" path="electron.app\.aardio-ignore" comment="electron.app\.aardio-ignore"/>
+		<file name=".npmrc" path="electron.app\.npmrc" comment="electron.app\.npmrc"/>
+		<file name=".yarnrc" path="electron.app\.yarnrc" comment="electron.app\.yarnrc"/>
+		<file name="app.ico" path="electron.app\app.ico" comment="electron.app\app.ico"/>
+		<file name="main.js" path="electron.app\main.js" comment="electron.app\main.js"/>
+		<file name="package.json" path="electron.app\package.json" comment="electron.app\package.json"/>
+		<folder name="node_modules" path="electron.app\node_modules" comment="electron.app\node_modules">
+			<folder name="aardio" path="electron.app\node_modules\aardio" comment="electron.app\node_modules\aardio">
+				<file name="index.d.ts" path="electron.app\node_modules\aardio\index.d.ts" comment="electron.app\node_modules\aardio\index.d.ts"/>
+				<file name="index.js" path="electron.app\node_modules\aardio\index.js" comment="electron.app\node_modules\aardio\index.js"/>
+			</folder>
+		</folder>
+	</folder>
+</project>
