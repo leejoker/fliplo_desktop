@@ -1,0 +1,6 @@
+{
+updateUrl="http://update.aardio.com/api/v1";
+singleFile=0;
+description="";
+outputDir="/.update-files/"
+}

@@ -1,0 +1,14 @@
+import win.ui;
+import web.blink.form;
+//import web.blink.portable;
+/*DSG{{*/
+var winform = win.form(text="aardio form";right=959;bottom=539;border="none";d=1;max=false;maximize=1;min=false;mode="popup";sysmenu=false;title=false)
+winform.add()
+/*}}*/
+
+var webkit = web.blink.form(winform);
+webkit.go("/web/index.html");
+
+winform.show();
+win.loopMessage();
+return winform,webkit;

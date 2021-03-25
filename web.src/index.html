@@ -1,0 +1,28 @@
+﻿<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./flipclock.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="./jquery.min.js"></script>
+	<script src="./flipclock.js"></script>
+</head>
+
+<body>
+	<div id="box">
+		<div id="content">
+			<div class="clock" id="flipclock"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.clock').FlipClock({
+				clockFace: 'TwentyFourHourClock',
+				showSeconds: false
+			});
+		});
+	</script>
+</body>
+
+</html>
