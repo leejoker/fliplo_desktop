@@ -6,8 +6,8 @@ manifestVersion="1.0">
     processorArchitecture="x86" 
     version="5.1.0.0"
     type="win32"
-    name="fliqlo_desktop.exe"/>
-    <description>fliqlo_desktop</description>
+    name="fliplo_desktop.exe"/>
+    <description>fliplo_desktop</description>
     <dependency>
     <dependentAssembly>
     <assemblyIdentity
