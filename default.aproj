@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project ver="10" name="fliplo_desktop" libEmbed="true" icon="logo.ico" ui="win" output="fliplo_desktop.exe" CompanyName="单位名称" FileDescription="fliqlo_desktop" LegalCopyright="Copyright (C) 单位名称 2020" ProductName="fliqlo_desktop" InternalName="fliqlo_desktop" FileVersion="0.0.0.05" ProductVersion="0.0.0.05" publishDir="/dist/" dstrip="false">
+<project ver="10" name="fliplo_desktop" libEmbed="true" icon="logo.ico" ui="win" output="fliplo_desktop.exe" CompanyName="单位名称" FileDescription="fliqlo_desktop" LegalCopyright="Copyright (C) 单位名称 2020" ProductName="fliqlo_desktop" InternalName="fliqlo_desktop" FileVersion="0.0.0.05" ProductVersion="0.0.0.05" publishDir="/dist/" dstrip="false" local="false" ignored="false">
 	<file name="main.aardio" path="main.aardio" comment="main.aardio"/>
-	<folder name="Js渲染进程" path="res" embed="true" local="false">
+	<folder name="Js渲染进程" path="res" embed="true" local="false" ignored="false">
 		<file name="flipclock.css" path="res\flipclock.css" comment="res\flipclock.css"/>
 		<file name="flipclock.js" path="res\flipclock.js" comment="res\flipclock.js"/>
 		<file name="index.aardio" path="res\index.aardio" comment="res\index.aardio"/>
 		<file name="jquery.min.js" path="res\jquery.min.js" comment="res\jquery.min.js"/>
 		<file name="style.css" path="res\style.css" comment="res\style.css"/>
 	</folder>
-	<folder name="Js主进程" path="electron.app" comment="目录" embed="false" local="false">
+	<folder name="Js主进程" path="electron.app" comment="目录" embed="false" local="false" ignored="false">
 		<file name=".aardio-ignore" path="electron.app\.aardio-ignore" comment="electron.app\.aardio-ignore"/>
 		<file name=".npmrc" path="electron.app\.npmrc" comment="electron.app\.npmrc"/>
 		<file name=".yarnrc" path="electron.app\.yarnrc" comment="electron.app\.yarnrc"/>
