@@ -1,10 +1,13 @@
 import wallpaper;
 import winex; 
+import win.reg;
 import electron.app;
 /*DSG{{*/
 var winform = win.form(text="fliplo desktop";right=269;bottom=329)
 winform.add(
-removewindow={cls="button";text="移除并关闭";left=35;top=175;right=235;bottom=277;z=1};
+button={cls="button";text="设置开机启动";left=34;top=194;right=235;bottom=243;z=3};
+button2={cls="button";text="取消开机启动";left=34;top=268;right=237;bottom=319;z=4};
+removewindow={cls="button";text="移除并关闭";left=34;top=120;right=234;bottom=169;z=1};
 static={cls="static";text="Fliplo Desktop";left=50;top=43;right=222;bottom=97;align="center";center=1;font=LOGFONT(h=-16;name='Consolas');notify=1;transparent=1;z=2}
 )
 /*}}*/
@@ -103,7 +106,18 @@ theApp.start({
     };
 }) 
 
-winform.removewindow.disabled = true;
+var regKey = 'fliplo_desktop'
+reg = win.reg("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run")
+v, t = reg.queryValue(regKey)
+
+if(v != null){
+	winform.button2.disabled =  false;
+	winform.button.disabled =  true;
+}else{
+	winform.button.disabled =  false;
+	winform.button2.disabled =  true;
+}
+
 winform.removewindow.oncommand = function(id,event){
 	//关闭窗口
 	wallpaper.removeWindow(hwnd);
@@ -135,6 +149,22 @@ winform.wndproc = function(hwnd,message,wparam,lparam){
 
 winform.static.oncommand = function(id,event){
 	
+}
+
+winform.button.oncommand = function(id,event){
+	reg = win.reg("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run")
+	reg.setSzValue(regKey, io._exepath)
+	reg.close()
+	winform.button.disabled = true
+	winform.button2.disabled = false
+}
+
+winform.button2.oncommand = function(id,event){
+	reg = win.reg("HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run")
+	reg.delValue(regKey)
+	reg.close()
+	winform.button2.disabled = true
+	winform.button.disabled = false
 }
 
 winform.show();

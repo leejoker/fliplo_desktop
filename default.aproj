@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project ver="10" name="fliplo_desktop" libEmbed="true" icon="logo.ico" ui="win" output="fliplo_desktop.exe" CompanyName="单位名称" FileDescription="fliqlo_desktop" LegalCopyright="Copyright (C) 单位名称 2020" ProductName="fliqlo_desktop" InternalName="fliqlo_desktop" FileVersion="0.0.0.05" ProductVersion="0.0.0.05" publishDir="/dist/" dstrip="false" local="false" ignored="false">
+<project ver="10" name="fliplo_desktop" libEmbed="true" icon="logo.ico" ui="win" output="fliplo_desktop.exe" CompanyName="单位名称" FileDescription="fliqlo_desktop" LegalCopyright="Copyright (C) 单位名称 2020" ProductName="fliqlo_desktop" InternalName="fliqlo_desktop" FileVersion="0.0.0.08" ProductVersion="0.0.0.08" publishDir="/dist/" dstrip="false" local="false" ignored="false">
 	<file name="main.aardio" path="main.aardio" comment="main.aardio"/>
 	<folder name="Js渲染进程" path="res" embed="true" local="false" ignored="false">
 		<file name="flipclock.css" path="res\flipclock.css" comment="res\flipclock.css"/>
